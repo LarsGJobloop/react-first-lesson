@@ -22,5 +22,18 @@ const application = ReactDOM.createRoot(applicationRoot)
 // Finally tell our application that we want to start rendering
 // and pass in the JSX (HTML inside JavaScript) we want to display
 application.render(
-  <App />
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )
+
+/**
+ * Addendum:
+ * React Strict Mode provides a set of extra guard rails
+ * when developing. Of note is that it will call the functions
+ * we use for components twice. You can see this if
+ * you include a console log in your components.
+ * Test and then remove the Strict Mode and test check again
+ * Read here for details:
+ * https://react.dev/reference/react/StrictMode
+ */
