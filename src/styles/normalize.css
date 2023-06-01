@@ -1,0 +1,17 @@
+/*
+  We will use this file for any overrides
+  of the default elements styling here
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

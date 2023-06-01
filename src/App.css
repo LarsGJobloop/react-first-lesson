@@ -1,0 +1,70 @@
+/* Application */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+
+  --navbar-height: 4rem;
+}
+
+/* Header */
+.App>header {
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--navbar-height);
+
+  padding: 0px .5rem;
+
+  background-color: blanchedalmond;
+}
+
+.App>header>.logo {
+  max-width: 3rem;
+}
+
+.App>header>.navigationMain>ul {
+  display: flex;
+  gap: .5rem;
+}
+.App>header {
+  font-weight: 900;
+}
+
+/* Main */
+.App>main {
+  flex-grow: 1;
+
+  background-color: plum;
+}
+
+.App>main>section {
+  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(100svh - var(--navbar-height));
+
+  scroll-margin-top: var(--navbar-height);
+}
+
+/* Footer */
+.App>footer {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+
+  background-color: coral;
+}
+
+.App>footer>.presenceLinks>ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.App>footer>.presenceLinks>ul>li {
+  max-width: 3rem;
+}

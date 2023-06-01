@@ -8,6 +8,10 @@ import ReactDOM from "react-dom/client";
 // a seperate file and imported here
 import { App } from "./App";
 
+// For CSS that is used throughout your application
+// you can put them inside here
+import "./styles/normalize.css"
+
 // Grab the root element (mounting point) from the HTML
 const applicationRoot = document.getElementById("root")
 
