@@ -3,6 +3,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// To separate the setup of our application
+// from the interface we define the rest in
+// a seperate file and imported here
+import { App } from "./App";
+
 // Grab the root element (mounting point) from the HTML
 const applicationRoot = document.getElementById("root")
 
@@ -13,5 +18,5 @@ const application = ReactDOM.createRoot(applicationRoot)
 // Finally tell our application that we want to start rendering
 // and pass in the JSX (HTML inside JavaScript) we want to display
 application.render(
-  <h1>Hello World</h1>
+  <App />
 )
